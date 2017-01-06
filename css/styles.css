@@ -1,0 +1,130 @@
+.container {
+  width: 90%;
+  padding: 0;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  background-color: #FFB4B0;
+}
+
+nav, .picker, .currentsongs {
+    border: 2px solid black;
+}
+
+nav ul {
+  list-style-type: none;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+nav li {
+  float: left;
+}
+
+.addmusic, .profile {
+  border-left: 2px solid black;
+  padding-left: 5px;
+}
+
+.viewmusic, .addmusic {
+  padding-right: 5px;
+}
+
+.picker {
+  float: left;
+  background: #4DD7FA;
+  margin: 15px 5px 0 0;
+  height: 100%;
+  width: 35%;
+  padding: 10px;
+}
+
+.currentsongs {
+  float: right;
+  background: #FEFAC0;
+  margin-top: 15px;
+  height: 100%;
+	width: 62%;
+}
+
+#songLength {
+  display: block;
+  height: 20px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.lengthLabel {
+  padding-top: 0px;
+}
+
+#artist {
+  display: block;
+  height: 20px;
+  width: 90%;
+  margin: 15px 0;
+}
+
+#album {
+  display: block;
+  height: 20px;
+  width: 90%;
+  margin: 15px 0;
+}
+
+.artistLabel {
+  margin: 20px 0 5px 0;
+}
+
+.songDetails {
+  list-style-type: none;
+}
+
+.songDetails li {
+  display: inline-block;
+  float: left;
+  padding: 0 5px 0 5px;
+}
+
+.songDetails li:nth-of-type(2), .songDetails li:nth-of-type(3) {
+  border-left: 2px solid;
+}
+
+.clear {
+  clear: both;
+}
+
+.songs h2 {
+  padding: 10px;
+  margin: -10px 0 -8px 10px;
+}
+
+.rightcheck {
+  width: 50%;
+  float: right;
+}
+
+.leftcheck {
+  width: 50%;
+  float: left;
+}
+
+ul.checkbox  {
+  margin: 0;
+  padding: 0;
+  margin-left: 20px;
+  list-style: none;
+}
+
+.filterButton {
+  text-align: center;
+}
+
+.filterButton button {
+	margin: 26px auto;
+	width: 120px;
+	border: 2px solid black;
+	border-radius: 10px;
+	background-color: white;

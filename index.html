@@ -1,13 +1,119 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Music History</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 <body>
+  <div class="container">
+    <div class="navigation">
+      <header>
+        <h1></h1>
+        <nav>
+          <ul>
+            <li class="viewmusic"> <a href="index.html">View Music</a> </li>
+            <li class="addmusic"> <a href="#.html">Add Music</a> </li>
+            <li class="profile"> <a href="#.html">Profile</a> </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <div>
+      <section  class="picker">
+        <label class="lengthLabel" for="songLength">Song Length:</label>
+        <input type="range" id="songLength">
+
+        <label class="artistLabel" for="artist">Artist</legend>
+        <select name="artist" id="artist">
+          <option value="linManuel">Lin-Manuel Miranda</option>
+          <option value="jeffersonAirplane">Jefferson Airplane</option>
+          <option value="nirvana">Nirvana</option>
+        </select>
+
+        <label class="albumLabel" for="album">Album</legend>
+        <select name="album" id="album">
+          <option value="hamilton">Hamilton: An American Musical</option>
+          <option value="surrealisticPillow">Surrealistic Pillow</option>
+          <option value="nevermind">Nevermind</option>
+        </select>
+
+        <p>Genre:</p>
+        <div class="leftcheck">
+          <ul class="checkbox">
+            <li><input type="checkbox" id="cb1" value="rock" /><label for="cb1">Rock</label></li>
+            <li><input type="checkbox" id="cb2" value="classical" /><label for="cb2">Classical</label></li>
+            <li><input type="checkbox" id="cb3" value="pop" /><label for="cb3">Pop</label></li>
+          </ul>
+        </div>
+        <div class="rightcheck">
+          <ul class="checkbox">
+            <li><input type="checkbox" id="cb4" value="jazz" /><label for="cb4">Jazz</label></li>
+            <li><input type="checkbox" id="cb5" value="blues" /><label for="cb5">Blues</label></li>
+            <li><input type="checkbox" id="cb6" value="hiphop" /><label for="cb6>">Hip hop</label></li>
+          </ul>
+        </div>
+
+        <div class="filterButton">
+          <button for="filter" type="submit">Filter</button>
+        </div>
+
+      </section>
 
 
+
+
+    </div>
+
+    <div>
+      <section  class="currentsongs">
+        <div class="songs">
+					<h2>Song Name</h2>
+					<ul class='songDetails'>
+						<li>Artist name</li>
+						<li>Album name</li>
+						<li>Genre</li>
+					</ul>
+        </div>
+        <div class="songs">
+					<h2 class="clear">Song Name</h2>
+					<ul class='songDetails'>
+						<li>Artist name</li>
+						<li>Album name</li>
+						<li>Genre</li>
+					</ul>
+        </div>
+        <div class="songs">
+					<h2 class="clear">Song Name</h2>
+					<ul class='songDetails'>
+						<li>Artist name</li>
+						<li>Album name</li>
+						<li>Genre</li>
+					</ul>
+        </div>
+        <div class="songs">
+					<h2 class="clear">Song Name</h2>
+					<ul class='songDetails'>
+						<li>Artist name</li>
+						<li>Album name</li>
+						<li>Genre</li>
+					</ul>
+        </div>
+        <div class="songs">
+					<h2 class="clear">Song Name</h2>
+					<ul class='songDetails'>
+						<li>Artist name</li>
+						<li>Album name</li>
+						<li>Genre</li>
+					</ul>
+        </div>
+      </section>
+    </div>
+  </div>
 </body>
+
 </html>
