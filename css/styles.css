@@ -46,7 +46,8 @@ nav li {
   background: #FEFAC0;
   margin-top: 15px;
   height: 100%;
-	width: 62%;
+	width: 61%;
+  padding-left: 10px;
 }
 
 #songLength {
