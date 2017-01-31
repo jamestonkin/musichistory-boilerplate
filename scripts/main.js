@@ -1,4 +1,7 @@
 var songs = [];
+var addNewMusic = '';
+var addNewArtist = '';
+var addNewAlbum = '';
 
 
 songs[songs.length] = "Legs > by Z*ZTop on the album Eliminator";
@@ -20,12 +23,31 @@ for (var i = 0; i < songs.length; i++) {
   insertSongs.innerHTML += '<h4>' + songs[i] + '</h4>';
 }
 
-// insertSongs = document.getElementById('main-songs');
-// insertSongs.innerHTML = '<p>' + songs[0] + '</p>';
-// insertSongs.innerHTML = '<p>' + songs[1] + '</p>';
-// insertSongs.innerHTML = '<p>' + songs[2] + '</p>';
-// insertSongs.innerHTML = '<p>' + songs[3] + '</p>';
-// insertSongs.innerHTML = '<p>' + songs[4] + '</p>';
-// insertSongs.innerHTML = '<p>' + songs[5] + '</p>';
-// insertSongs.innerHTML = '<p>' + songs[6] + '</p>';
-// console.log(songs);
+var addMusic = document.getElementById('addmusic');
+var viewMusic = document.getElementById('viewmusic');
+var sectionOne = document.getElementById('section-one');
+var addNew = document.getElementById('add-new');
+var addMusicButton = document.getElementById('addMusicButton');
+
+addMusic.addEventListener('click', function(event){
+  addNew.classList.remove('hidden');
+  sectionOne.classList.add('hidden');
+})
+
+viewMusic.addEventListener('click', function(event){
+  sectionOne.classList.remove('hidden');
+  addNew.classList.add('hidden');
+})
+
+addMusicButton.addEventListener('click', addMyMusic);
+
+function addMyMusic(event) {
+  addNewSong = document.getElementById('add-new-song').value;
+  console.log(addNewSong);
+  addNewArtist = document.getElementById('add-new-artist').value;
+  console.log(addNewArtist);
+  addNewAlbum = document.getElementById('add-new-album').value;
+  console.log(addNewAlbum);
+  insertSongs.innerHTML += '<h4>' + addNewSong + " by " + addNewArtist + " on the album " + addNewAlbum + '</h4>';
+
+}
