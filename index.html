@@ -16,15 +16,15 @@
         <h1></h1>
         <nav>
           <ul>
-            <li class="viewmusic"> <a href="index.html">View Music</a> </li>
-            <li class="addmusic"> <a href="#.html">Add Music</a> </li>
-            <li class="profile"> <a href="#.html">Profile</a> </li>
+            <li class="viewmusic"> <a id="viewmusic" href="#">View Music</a> </li>
+            <li class="addmusic"> <a id="addmusic" href="#">Add Music</a> </li>
+            <li class="profile"> <a href="#">Profile</a> </li>
           </ul>
         </nav>
       </header>
     </div>
 
-    <div>
+    <div id="section-one">
       <section  class="picker">
         <label class="lengthLabel" for="songLength">Song Length:</label>
         <input type="range" id="songLength">
@@ -64,10 +64,22 @@
         </div>
 
       </section>
+
+      <div class="currentsongs" id="main-songs">
+
+      </div>
     </div>
+  </div>
 
-    <div class="currentsongs" id="main-songs">
-
+  <div id="add-new" class="more-music hidden">
+    <label for="new-song">Add New Song</label>
+    <input id="add-new-song" type="text" placeholder="New Song">
+    <label for="new-artist">Add New Artist</label>
+    <input id="add-new-artist" type="text" placeholder="New Artist">
+    <label for="new-album">Add New Album</label>
+    <input id="add-new-album" type="text" placeholder="New Album">
+    <div class="filterButton">
+      <button type="button" id="addMusicButton">Add</button>
     </div>
   </div>
 <script src="scripts/main.js" type="text/javascript"></script>
