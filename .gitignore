@@ -26,7 +26,6 @@ Temporary Items
 .apdisk
 
 .eslintrc
-package.json
 node_modules
 
 # End of https://www.gitignore.io/api/osx

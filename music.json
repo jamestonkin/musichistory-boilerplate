@@ -1,4 +1,5 @@
-[
+{
+  "songs": [
     {
       "title": "Legs",
       "artist": "ZZ Top",
@@ -9,4 +10,5 @@
       "artist": "Supertramp",
       "album": "Breakfast in America"
     }
-]
+  ]
+}

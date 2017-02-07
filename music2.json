@@ -1,4 +1,5 @@
-[
+{
+  "songs": [
     {
       "title": "Another Brick in the Wall",
       "artist": "Pink Floyd",
@@ -14,4 +15,5 @@
       "artist": "Alanis Morisette",
       "album": "Jagged Little Pill"
     }
-]
+  ]
+}

@@ -25,7 +25,7 @@ function moarSongs(get) {
     var data = JSON.parse(event.target.responseText);
     showData(data);
   }
-  function showData (data) {
+  function showData(data) {
     console.log('data: ', data);
     for (var i = 0; i < data.length; i++) {
       console.log('Looping?');
@@ -48,7 +48,7 @@ function moarSongs(get) {
 
 
 // Event Listener for delete button
-document.addEventListener('click', function(event){
+document.addEventListener('click', function(event) {
   if(event.target.className === 'delete') {
     event.target.parentNode.remove();
   }
